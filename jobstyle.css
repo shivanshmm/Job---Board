@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+
+
+.form-label{
+    font-size: larger;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+
+
+.wrapper-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: -10;
+    
+    .card-body{
+        width: 100%;
+        padding: 20px;
+        border-radius: 15px;
+        border: #11110e 2px solid;
+
+        .card-text {
+            max-height: 8 * 1.2em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 8;
+            -webkit-box-orient: vertical;
+        }
+    }
+}
