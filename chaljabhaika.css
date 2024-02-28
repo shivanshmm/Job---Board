@@ -13,9 +13,7 @@ body{
 
 .wrapper-page{
     display: flex;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    height: 100%;
 
     .wrapper-sidebar{
         padding: 2rem;
@@ -23,16 +21,6 @@ body{
         max-width: 25vw;
         min-width: 25vw;
         border-right: 1px solid rgb(205, 205, 205);
-    }
-
-    .wrapper-results{
-        width: inherit;
-        height: 100%;
-
-        .parent-wrapper-cards{
-            overflow-y: scroll;
-            height: calc(100% - 7vh);
-        }
     }
 }
 
@@ -57,39 +45,4 @@ body{
             -webkit-box-orient: vertical;
         }
     }
-}
-
-
-@media screen and (max-width: 950px){
-
-    body{
-        height: fit-content;
-        overflow: visible;
-    }
-
-    .wrapper-page{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        overflow: visible;
-    
-        .wrapper-sidebar{
-            padding: 2rem;
-            height: inherit;
-            min-width: 100%;
-            border-right: none;
-        }
-    
-        .wrapper-results{
-            width: inherit;
-            height: 100%;
-    
-            .parent-wrapper-cards{  
-                overflow-y: scroll;
-                height: calc(100% - 7vh);
-            }
-        }
-    }
-    
 }
