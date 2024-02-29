@@ -29,12 +29,13 @@ img{
     .p1{
       font-size: 3rem;
       font-weight: 700;
-        }
-        
-        .p2{
-          font-size: medium;
-          margin-top: 1rem;
-        }
+    }
+    
+    .p2{
+      font-size: medium;
+      margin-top: 1rem;
+      color: rgb(114, 114, 114);
+    }
         
         button {
           font-family: "Anta", sans-serif;
@@ -232,19 +233,21 @@ img{
       font-family: "Rubik", sans-serif;
       font-size: 3rem;
       font-weight: 500;
+      text-align: center;
     }
 
     .wrapper-card{
-      display: flex;
-      gap: 2rem;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-gap: 2rem;
       
-      .c1 .c3{
+      /* .c1 .c3{
         margin-top: 2rem;
         background-color: #e33636;
       }
       .c2 .c4{
         margin-bottom: 2rem;
-      }
+      } */
 
       .card:hover {
         transform: translateY(-20px);
@@ -278,8 +281,207 @@ img{
 }
 
 
-@media screen and (max-width: 654px){
+@media screen and (max-width: 1024px){
   
+  .wrapper-quick{
+    .p1{
+      font-size: 2rem;
+    }
 
+    .wrapper-card{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
 
 }
+@media screen and (max-width: 620px){
+  
+  .wrapper-quick{
+    .p1{
+      font-size: 2rem;
+    }
+
+    .wrapper-card{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+}
+
+/* job opening cards */
+
+.job-openings{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem 2rem 4rem;
+  justify-content: start;
+  align-items: start;
+  font-family: "Rubik", sans-serif;
+
+  .header{
+    font-size: 3rem;
+    font-weight: 500;
+  }
+
+  .para{
+    font-size: medium;
+    width: 70%;
+    color: gray;
+  }
+
+  .wrapper-card{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3,1fr); 
+    padding: 1.5rem;
+
+    .opening-card{
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #d8efbe;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+      padding: 1.5rem;
+      border-radius: 10px;
+      /* height: 30vh; */
+      color: #1e1e1f;
+      transition: transform 0.4s ease;
+      
+      h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+        padding-bottom: 2vh;
+      }
+      h3{
+        font-size: 1rem;
+      }
+      p{
+        font-size: small;
+        color: gray;
+      }
+    }
+    .opening-card:hover{
+      color: white;
+      background-color: #1e1e1f;
+      transform: scale(1.05);
+    }
+    .opening-card:hover ~ .opening-card {
+      transform: scale(0.9);
+    }
+  }
+}
+
+
+/* testimonials */
+
+.testimonials{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  padding: 8rem 2rem 4rem 2rem;
+
+  .wrapper-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+
+    button{
+      border: none; 
+      padding: 0.3rem 1rem 0.3rem 1rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      border-radius: 24px;
+      color: rgb(71, 70, 70);
+    }
+
+    p{
+      font-size: 2rem;
+      font-weight: 500;
+      color: rgb(82, 82, 82);
+      text-align: center  ;
+    }
+    
+    .images{
+      display: flex;
+  
+      .c1{
+        position: relative;
+        left: 10px;
+        z-index: 2;
+  
+        img{
+          rotate: -10deg;
+        }
+      }
+      .c2{
+        position: relative;
+        z-index: 3;
+      }
+      .c3{
+        position: relative;
+        right: 10px;
+        z-index: 4;
+  
+        img{
+          rotate: 10deg;
+        }
+      }
+  
+      .image-card{
+  
+        border: 3px solid #B4F763;;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        background-color: white;
+  
+        img{
+          width: 6rem;
+        }
+      }
+        
+    }
+  }
+
+  .reviews{
+    .carousel-container {
+      width: 70vw;
+      margin: auto;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+      min-width: 70vw;
+      box-sizing: border-box;
+      padding: 20px;
+      text-align: center;
+    }
+
+    #prevBtn, #nextBtn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 24px;
+      color: #000;
+      background: transparent;
+      border: none;
+    }
+
+    #prevBtn {
+      left: 0;
+    }
+
+    #nextBtn {
+      right: 0;
+    }
+  }
+
+}
+
