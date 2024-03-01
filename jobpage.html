@@ -69,7 +69,7 @@
             const parameter2 = document.getElementById("parameter2").value;
             const parameter3 = document.getElementById("parameter3").value;
 
-            data.innerHTML ="";
+            data.innerHTML =`<div class="loader"></div>`;
 
             const encodedQuery = encodeURIComponent(parameter1);
 
@@ -95,6 +95,7 @@
                 const result = await response.json();
                 const list = result.data;
                 console.log(list);
+                data.innerHTML =``;
 
                 list.map((item) => {
                     data.innerHTML += `
