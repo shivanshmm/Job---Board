@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -419,7 +420,7 @@ img{
   flex-direction: column;
   justify-content: center;
   align-items: center;  
-  padding: 8rem 2rem 4rem 2rem;
+  padding: 5rem 2rem 4rem 2rem;
 
   .wrapper-top{
     display: flex;
@@ -548,6 +549,7 @@ img{
     padding: 5rem 0rem 4rem 0rem;
 
     .reviews{
+      padding-top: 3rem;
       width: 100vw;
 
     .slide {
@@ -569,7 +571,11 @@ img{
                 width: 100%;
               }
             }
-          }
+
+            .carousel-control-prev , .carousel-control-next{
+              display: none;
+            }
+      }
     }
   }
 }
