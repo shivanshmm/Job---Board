@@ -248,7 +248,7 @@ img{
 
       .card {
         transition: transform 0.3s ease;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adjust the alpha value to make it slightly darker */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
       }
       
       .card-body {

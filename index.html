@@ -246,10 +246,9 @@
   document.addEventListener('DOMContentLoaded', function () {
     var carousel = document.querySelector('.carousel');
     var carouselInstance = new bootstrap.Carousel(carousel, {
-      interval: 3000 // Adjust the interval (in milliseconds) for automatic scrolling
+      interval: 3000
     });
 
-    // Handle manual navigation
     var prevButton = document.querySelector('.carousel-control-prev');
     var nextButton = document.querySelector('.carousel-control-next');
 
@@ -264,7 +263,6 @@
 </script>
 
 <script>
-    // This JavaScript part is not required for the hover effect but provided for clarity.
     const cards = document.querySelectorAll('.opening-card');
 
     cards.forEach(card => {
