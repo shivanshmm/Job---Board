@@ -20,7 +20,6 @@ img{
   align-items: start;
   justify-content: space-between;
   gap: 5rem;
-  height: 70vh;
   
   .hero-para{
     width: 50%;
@@ -180,7 +179,6 @@ img{
     white-space: nowrap;
     position: relative;
     display: flex;
-    height: 30vh;
   }
   
   .logos:before,
