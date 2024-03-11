@@ -1,12 +1,3 @@
-function handleResize() {
-    if (window.innerWidth <= 800) {
-      document.getElementById('show-signup').addEventListener('click', showAlert);
-      document.getElementById('show-signin').addEventListener('click', showAlert);
-    } else {
-      document.getElementById('show-signup').removeEventListener('click', showAlert);
-      document.getElementById('show-signin').removeEventListener('click', showAlert);
-    }
-  }
   
   document.getElementById('cross').addEventListener('click', function() {
     document.getElementById('signup').style.display = 'none';
@@ -36,10 +27,4 @@ function handleResize() {
     document.getElementById('overlay').style.display = 'block';
     document.body.style.overflow = 'hidden'; // Prevent scrolling
   });
-  
-  // Initial call to handleResize to set up event listeners based on the initial screen width
-  handleResize();
-  
-  // Add event listener for resize event
-  window.addEventListener('resize', handleResize);
   

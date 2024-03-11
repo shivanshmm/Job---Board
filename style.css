@@ -180,7 +180,7 @@ img{
     position: relative;
     display: flex;
   }
-  
+
   .logos:before,
   .logos:after {
     position: absolute;
